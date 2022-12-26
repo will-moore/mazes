@@ -93,6 +93,10 @@ export class Grid {
         });
     }
 
+    each_row(func) {
+        this.grid.forEach(func);
+    }
+
     cells() {
         return this.grid.flatMap(row => row);
     }
